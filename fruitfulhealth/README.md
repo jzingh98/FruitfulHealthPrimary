@@ -16,6 +16,11 @@ Below you'll find information about performing common tasks. The most recent ver
     * README.md
     * yarn.lock
 
+## Packager Info -- DO NOT CHANGE -- This is to be used in case "null" does not work in packager-info.json
+* "expoServerPort": 19000,
+* "packagerPort": 19001,
+* "packagerPid": 26496
+
 ## Table of Contents
 
 * [Updating to New Releases](#updating-to-new-releases)
