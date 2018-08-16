@@ -1,6 +1,5 @@
 import React from 'react';
 import Login from './app/Login'; //Any new files we need to add, add like this
-import {StackNavigator} from 'react-navigation'; //this is required for StackNavigator to work
 
 
 // Comment from James: StackNavigator seems to be pretty slow when transitioning between screens.
@@ -16,7 +15,7 @@ const RootStack = StackNavigator({
       backgroundColor: 'white',
     },
   }
-});
+});*/
 
 export default RootStack;
 console.disableYellowBox = true;
