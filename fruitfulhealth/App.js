@@ -1,24 +1,59 @@
 'use strict';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 
 export default class App extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        name: "",
+        email: "",
+        password: ""
+      }
+  }
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes hi hi you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <View>
+        <Text style={styles.logintitle}>
+            LOGIN
+        </Text>
+        <TextInput
+          style={styles.input}
+          onChangeText={(text) => this.setState({name: text})}
+          placeholder="Name"
+        />
+        <TextInput
+          style={styles.input}
+          onChangeText={(text) => this.setState({email: text})}
+          placeholder="E-Mail"
+        />
+        <TextInput
+          style={styles.input}
+          onChangeText={(text) => this.setState({password:text})}
+          secureTextEntry={true}
+          placeholder="Password"
+        />
+        <Button
+          onPress={this.submit}
+          title="Submit"
+          color="#841584"
+        />
       </View>
     );
   }
+  submit() {
+//Do Something
+}
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  input: {
+    width: 250,
+    margin: 5
+},
+  logintitle: {
+      padding: 100,
+      color: '#00C8B2',
+      fontFamily: 'Baskerville'
+}
 });
