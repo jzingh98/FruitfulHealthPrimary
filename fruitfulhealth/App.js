@@ -1,7 +1,24 @@
-'use strict'; // Added by Gabriella Quattrone: This allows for improved error handling and disables weakly-made Javascript features.
+'use strict';
 import React from 'react';
-import Main from './javascipt_files/Main'; // We are creating a place to hold all future javascript files together.
+import { StyleSheet, Text, View } from 'react-native';
 
-/* This will be the main entry point for using Expo. */
-const App = () => <Main/>;
-export default App;
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>Open up App.js to start working on your app!</Text>
+        <Text>Changes hi hi you make will automatically reload.</Text>
+        <Text>Shake your phone to open the developer menu.</Text>
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
