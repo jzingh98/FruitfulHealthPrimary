@@ -1,6 +1,8 @@
 'use strict';
-import React from 'react';
-import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, Text, View, TextInput, Button, AppRegistry } from 'react-native';
+import Login from './src/pages/Login';
+
 
 export default class App extends React.Component {
     constructor(props) {
@@ -13,32 +15,7 @@ export default class App extends React.Component {
   }
   render() {
     return (
-        <View>
-        <Text style={styles.logintitle}>
-            LOGIN
-        </Text>
-        <TextInput
-          style={styles.input}
-          onChangeText={(text) => this.setState({name: text})}
-          placeholder="Name"
-        />
-        <TextInput
-          style={styles.input}
-          onChangeText={(text) => this.setState({email: text})}
-          placeholder="E-Mail"
-        />
-        <TextInput
-          style={styles.input}
-          onChangeText={(text) => this.setState({password:text})}
-          secureTextEntry={true}
-          placeholder="Password"
-        />
-        <Button
-          onPress={this.submit}
-          title="Submit"
-          color="#841584"
-        />
-      </View>
+        <Login/>
     );
   }
   submit() {
@@ -57,3 +34,5 @@ const styles = StyleSheet.create({
       fontFamily: 'Baskerville'
 }
 });
+
+AppRegistry.registerComponent('App', () => App);
