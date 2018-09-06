@@ -7,7 +7,7 @@ import Label from '../components/Label';
 export default class Login extends Component {
 constructor(props) {
     super(props);
-    this.state = { username: 'Username', password: 'Password' };
+    this.state = {password: 'Password' };
  }
   render() {
     return (
@@ -17,9 +17,9 @@ constructor(props) {
                 <Text style={styles.textlogo}> Health </Text>
             <Container>
                 <TextInput
-                    style={styles.textInput}
-                    onChangeText={() => this.setState({})}
-                    value={this.state.username}
+                    style={styles.textInput} placeholder='Username'
+                    onChangeText={(username) => this.setState({input: username})}
+                    value={this.state.input}
                 />
             </Container>
             <Container>

@@ -4,16 +4,18 @@ Below you'll find information about performing common tasks. The most recent ver
 
 ## WARNING - This warning is written by Gabriella Quattrone
 * Do not change any of the following files unless absolutely necessary or you know what you are doing:
+    * App.js
     * Anything in the .expo folder
     * Anything in the node_modules folder
     * .babelrc
     * .gitignore
     * .watchmanconfig
-    * App.js
     * app.json
     * App.test.js
     * package.json
     * README.md
+
+## DO NOT CHANGE UNDER ANY CIRCUMSTANCES
     * yarn.lock
 
 ## Packager Info -- DO NOT CHANGE -- This is to be used in case "null" does not work in packager-info.json
