@@ -5,6 +5,10 @@ import Button from '../components/Button';
 import Label from '../components/Label';
 
 export default class Login extends Component {
+constructor(props) {
+    super(props);
+    this.state = { username: 'Username', password: 'Password' };
+ }
   render() {
     return (
         <ScrollView style={styles.scroll}>
@@ -12,16 +16,18 @@ export default class Login extends Component {
                 <Text style={styles.textlogo}> Fruitful </Text>
                 <Text style={styles.textlogo}> Health </Text>
             <Container>
-                <Label text="Username" />
                 <TextInput
                     style={styles.textInput}
+                    onChangeText={() => this.setState({})}
+                    value={this.state.username}
                 />
             </Container>
             <Container>
-                <Label text="Password" />
                 <TextInput
                     secureTextEntry={true}
                     style={styles.textInput}
+                    onChangeText={() => this.setState({})}
+                    value={this.state.password}
                 />
             </Container>
             <View>
@@ -61,10 +67,13 @@ alignRight: {
     alignSelf: 'flex-end' // Positions the element at the very end of the current line
 },
 textInput: {
-    height: 80,
-    fontSize: 30,
+    height: 60,
+    fontSize: 20,
     backgroundColor: '#FFF',
-    borderRadius: 10
+    fontFamily: 'Avenir',
+    paddingLeft: '5%',
+    borderRadius: 10,
+    color: 'grey'
 },
 loginText: {
     fontSize: 20,
@@ -80,7 +89,7 @@ loginButton: {
     borderRadius: 10
 },
 logo: {
-        paddingTop: '45%',
+        paddingTop: '85%',
         width: '50%',
         height: '40%',
         paddingLeft: '100%',
