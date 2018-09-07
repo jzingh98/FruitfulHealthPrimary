@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TextInput, ScrollView, Image } from 'react-native';
+import { TouchableOpacity, StyleSheet, Text, View, TextInput, ScrollView, Image } from 'react-native';
 import Container from '../components/Container';
 import Button from '../components/Button';
 import Label from '../components/Label';
+import CustomText from '../common/CustomText.js';
 
 export default class Login extends Component {
 constructor(props) {
@@ -24,6 +25,7 @@ constructor(props) {
             </Container>
             <Container>
                 <TextInput
+                    placeholder='Password'
                     secureTextEntry={true}
                     style={styles.textInput}
                     onChangeText={() => this.setState({})}
@@ -38,10 +40,11 @@ constructor(props) {
                         onPress={this.press.bind(this)} />
                 </Container>
                 <Container>
-                    <Button
-                    label="New User? Register Here"
-                    styles={{button: styles.alignCenter, label: styles.newUser}}
-                    onPress={this.press.bind(this)} />
+                    <TouchableOpacity style={styles.newUser}
+                    onPress={async () => {
+                        this.props.navigation.navigate('Disclaimer');}}>
+                    <CustomText>New User? Register Here</CustomText>
+                    </TouchableOpacity>
                 </Container>
             </View>
         </ScrollView>

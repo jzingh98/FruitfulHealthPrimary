@@ -18,6 +18,9 @@ Below you'll find information about performing common tasks. The most recent ver
 ## DO NOT CHANGE UNDER ANY CIRCUMSTANCES
     * yarn.lock
 
+## MAKE SURE YOU HAVE DONE
+    * yarn add react-navigation //installs the navigation stack for the app
+
 ## Packager Info -- DO NOT CHANGE -- This is to be used in case "null" does not work in packager-info.json
 * "expoServerPort": 19000,
 * "packagerPort": 19001,
@@ -27,11 +30,11 @@ Below you'll find information about performing common tasks. The most recent ver
 
 * [Updating to New Releases](#updating-to-new-releases)
 * [Available Scripts](#available-scripts)
-  * [npm start](#npm-start)
-  * [npm test](#npm-test)
-  * [npm run ios](#npm-run-ios)
-  * [npm run android](#npm-run-android)
-  * [npm run eject](#npm-run-eject)
+  * [yarn start](#yarn-start)
+  * [yarn test](#yarn-test)
+  * [yarn run ios](#yarn-run-ios)
+  * [yarn run android](#yarn-run-android)
+  * [yarn run eject](#yarn-run-eject)
 * [Writing and Running Tests](#writing-and-running-tests)
 * [Environment Variables](#environment-variables)
   * [Configuring Packager IP Address](#configuring-packager-ip-address)
@@ -59,7 +62,7 @@ Upgrading to a new version of React Native requires updating the `react-native`,
 
 If Yarn was installed when the project was initialized, then dependencies will have been installed via Yarn, and you should probably use it to run these commands as well. Unlike dependency installation, command running syntax is identical for Yarn and NPM at the time of this writing.
 
-### `npm start`
+### `yarn start`
 
 Runs your app in development mode.
 
@@ -68,22 +71,20 @@ Open it in the [Expo app](https://expo.io) on your phone to view it. It will rel
 Sometimes you may need to reset or clear the React Native packager's cache. To do so, you can pass the `--reset-cache` flag to the start script:
 
 ```
-npm start --reset-cache
-# or
 yarn start --reset-cache
 ```
 
-#### `npm test`
+#### `yarn test`
 
 Runs the [jest](https://github.com/facebook/jest) test runner on your tests.
 
-#### `npm run ios`
+#### `yarn run ios`
 
-Like `npm start`, but also attempts to open your app in the iOS Simulator if you're on a Mac and have it installed.
+Like `yarn start`, but also attempts to open your app in the iOS Simulator if you're on a Mac and have it installed.
 
-#### `npm run android`
+#### `yarn run android`
 
-Like `npm start`, but also attempts to open your app on a connected Android device or emulator. Requires an installation of Android build tools (see [React Native docs](https://facebook.github.io/react-native/docs/getting-started.html) for detailed setup). We also recommend installing Genymotion as your Android emulator. Once you've finished setting up the native build environment, there are two options for making the right copy of `adb` available to Create React Native App:
+Like `yarn start`, but also attempts to open your app on a connected Android device or emulator. Requires an installation of Android build tools (see [React Native docs](https://facebook.github.io/react-native/docs/getting-started.html) for detailed setup). We also recommend installing Genymotion as your Android emulator. Once you've finished setting up the native build environment, there are two options for making the right copy of `adb` available to Create React Native App:
 
 ##### Using Android Studio's `adb`
 
@@ -96,7 +97,7 @@ Like `npm start`, but also attempts to open your app on a connected Android devi
 2. Add the Genymotion tools directory to your path (instructions for [Mac](http://osxdaily.com/2014/08/14/add-new-path-to-path-command-line/), [Linux](http://www.computerhope.com/issues/ch001647.htm), and [Windows](https://www.howtogeek.com/118594/how-to-edit-your-system-path-for-easy-command-line-access/)).
 3. Make sure that you can run adb from your terminal.
 
-#### `npm run eject`
+#### `yarn run eject`
 
 This will start the process of "ejecting" from Create React Native App's build scripts. You'll be asked a couple of questions about how you'd like to build your project.
 
@@ -167,7 +168,7 @@ You can also use a service like [Expo's standalone builds](https://docs.expo.io/
 
 If you want to build and deploy your app yourself, you'll need to eject from CRNA and use Xcode and Android Studio.
 
-This is usually as simple as running `npm run eject` in your project, which will walk you through the process. Make sure to install `react-native-cli` and follow the [native code getting started guide for React Native](https://facebook.github.io/react-native/docs/getting-started.html).
+This is usually as simple as running `yarn run eject` in your project, which will walk you through the process. Make sure to install `react-native-cli` and follow the [native code getting started guide for React Native](https://facebook.github.io/react-native/docs/getting-started.html).
 
 #### Should I Use ExpoKit?
 
@@ -203,7 +204,7 @@ If you're not able to load the `http` URL in your phone's web browser, try using
 
 ### iOS Simulator won't open
 
-If you're on a Mac, there are a few errors that users sometimes see when attempting to `npm run ios`:
+If you're on a Mac, there are a few errors that users sometimes see when attempting to `yarn run ios`:
 
 * "non-zero exit code: 107"
 * "You may need to install Xcode" but it is already installed
@@ -212,8 +213,8 @@ If you're on a Mac, there are a few errors that users sometimes see when attempt
 There are a few steps you may want to take to troubleshoot these kinds of errors:
 
 1. Make sure Xcode is installed and open it to accept the license agreement if it prompts you. You can install it from the Mac App Store.
-2. Open Xcode's Preferences, the Locations tab, and make sure that the `Command Line Tools` menu option is set to something. Sometimes when the CLI tools are first installed by Homebrew this option is left blank, which can prevent Apple utilities from finding the simulator. Make sure to re-run `npm/yarn run ios` after doing so.
-3. If that doesn't work, open the Simulator, and under the app menu select `Reset Contents and Settings...`. After that has finished, quit the Simulator, and re-run `npm/yarn run ios`.
+2. Open Xcode's Preferences, the Locations tab, and make sure that the `Command Line Tools` menu option is set to something. Sometimes when the CLI tools are first installed by Homebrew this option is left blank, which can prevent Apple utilities from finding the simulator. Make sure to re-run `yarn run ios` after doing so.
+3. If that doesn't work, open the Simulator, and under the app menu select `Reset Contents and Settings...`. After that has finished, quit the Simulator, and re-run `yarn run ios`.
 
 ### QR Code does not scan
 

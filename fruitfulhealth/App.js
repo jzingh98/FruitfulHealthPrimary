@@ -1,38 +1,13 @@
 'use strict';
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TextInput, Button, AppRegistry } from 'react-native';
-import Login from './src/pages/Login';
+import Main from './src/Main';
+import { AppRegistry } from 'react-native';
 
-
-export default class App extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        name: "",
-        email: "",
-        password: ""
-      }
-  }
-  render() {
-    return (
-        <Login/>
-    );
-  }
-  submit() {
-//Do Something
-}
-}
-
-const styles = StyleSheet.create({
-  input: {
-    width: 250,
-    margin: 5
-},
-  logintitle: {
-      padding: 100,
-      color: '#00C8B2',
-      fontFamily: 'Baskerville'
-}
-});
-
+/*
+ * This is the main entry point for Expo apps. I separated this from everything
+ * else to make things cleaner. We can consolidate things in the future if we
+ * no longer use Expo for development.
+ */
+const App = () => <Main />;
 AppRegistry.registerComponent('App', () => App);
+export default App;
