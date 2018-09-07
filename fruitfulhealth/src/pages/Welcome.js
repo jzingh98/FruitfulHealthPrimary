@@ -14,7 +14,7 @@ export default class Welcome extends React.Component {
     return (
           <View style={styles.container}>
 
-            <View style={styles.messageBox}>
+            <View>
              <CustomText
                    style={{
                      fontFamily: 'Avenir-Light',
@@ -28,14 +28,12 @@ export default class Welcome extends React.Component {
 
             <Image
                    style={{
-                     padding: 10,
-                     paddingTop: 20,
-                     fontFamily: 'Helvetica',
-                     fontSize: 20,
-                     color: 'grey',
-                     textAlign: 'center',
+                     paddingLeft: '100%',
+                     paddingTop: '70%',
+                     width: '15%',
+                     height: '45%',
                    }}
-                source={require('../../images/apple-touch-icon.png')}/>
+                source={require('../../images/fruitfulFriends.png')}/>
 
             <CustomText
                    style={{
@@ -47,8 +45,6 @@ export default class Welcome extends React.Component {
                      textAlign: 'center',
                    }}
                 >We're honored that you've chosen us {"\n"} to help you manage your health.</CustomText>
-
-            <TextInput style={styles.ageBox} maxLength={3}  placeHolder="Age"></TextInput>
 
             <TouchableOpacity style={styles.understood}
                 onPress={async () => {
@@ -62,6 +58,8 @@ export default class Welcome extends React.Component {
                 textAlign: 'center',
                 fontWeight: 'bold',
                 fontFamily: 'Avenir-Light',
+                paddingLeft:'3%',
+                paddingRight: '3%'
                 }}
                 >Get Started</CustomText>
               </TouchableOpacity>
@@ -77,34 +75,21 @@ const styles = StyleSheet.create({
     display: 'flex',
     backgroundColor: '#E56A58',
     height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   background: {
     flex: 1,
     width: '100%',
     height: '100%',
   },
-  characterBox: {
-      borderWidth: 1,
-      borderColor: 'black',
-      height: '40%',
-  },
   understood: {
     borderRadius: 10,
-    height: '12%',
-    width: '60%',
+    height: '14%',
+    width: '100%',
     backgroundColor: '#57BDC1',
     justifyContent: 'center',
-    textAlign: 'center',
-    marginLeft: '20%',
+    marginLeft: '35%',
+    width: '100%'
   },
-  button: {
-    borderRadius: 0,
-    marginRight: 20,
-    height: 50,
-    backgroundColor: 'white',
-    justifyContent: 'center',
-    width: 70,
-    marginTop: 10,
-    marginLeft: 250,
-  }
 });

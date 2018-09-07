@@ -1,10 +1,10 @@
 import React from 'react';
-import { StackNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation';
 import Login from './Login';
 import Disclaimer from './Disclaimer';
 import Welcome from './Welcome';
 
-const RootStack = StackNavigator({
+const RootStack = createStackNavigator({
   Login: {
       screen: Login,
   },
