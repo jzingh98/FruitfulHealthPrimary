@@ -11,7 +11,7 @@ const RootStack = StackNavigator({
       screen: Disclaimer,
   },
 }, {
-  initialRouteName: 'Login',
+  initialRouteName: 'Disclaimer',
   navigationOptions: {
     headerStyle: {
       backgroundColor: 'white',

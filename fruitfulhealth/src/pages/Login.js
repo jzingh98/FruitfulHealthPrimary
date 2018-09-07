@@ -40,10 +40,16 @@ constructor(props) {
                         onPress={this.press.bind(this)} />
                 </Container>
                 <Container>
-                    <TouchableOpacity style={styles.newUser}
+                    <TouchableOpacity
                     onPress={async () => {
-                        this.props.navigation.navigate('Disclaimer');}}>
-                    <CustomText>New User? Register Here</CustomText>
+                    this.props.navigation.navigate('Disclaimer');}}>
+                    <CustomText
+                    style={{
+                        color: '#9F493D',
+                        fontSize: 20,
+                        fontFamily: 'Avenir',
+                        textAlign: 'center'
+                    }}>New User? Register Here</CustomText>
                     </TouchableOpacity>
                 </Container>
             </View>
@@ -60,11 +66,6 @@ scroll: {
     backgroundColor: '#E56A58',
     padding: 30,
     flexDirection: 'column' // Optional, but good practice to explicitly define
-},
-newUser: {
-    color: '#9F493D',
-    fontSize: 20,
-    fontFamily: 'Avenir'
 },
 alignRight: {
     alignSelf: 'flex-end' // Positions the element at the very end of the current line
