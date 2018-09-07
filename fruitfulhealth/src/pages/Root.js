@@ -2,6 +2,7 @@ import React from 'react';
 import { StackNavigator } from 'react-navigation';
 import Login from './Login';
 import Disclaimer from './Disclaimer';
+import Welcome from './Welcome';
 
 const RootStack = StackNavigator({
   Login: {
@@ -10,8 +11,11 @@ const RootStack = StackNavigator({
   Disclaimer: {
       screen: Disclaimer,
   },
+  Welcome: {
+      screen: Welcome,
+  }
 }, {
-  initialRouteName: 'Disclaimer',
+  initialRouteName: 'Welcome',
   navigationOptions: {
     headerStyle: {
       backgroundColor: 'white',
