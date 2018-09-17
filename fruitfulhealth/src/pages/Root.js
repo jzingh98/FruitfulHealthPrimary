@@ -27,7 +27,7 @@ const RootStack = createStackNavigator({
       screen: HealthConcerns,
   }
 }, {
-  initialRouteName: 'HealthConcerns',
+  initialRouteName: 'Login',
   navigationOptions: {
     headerStyle: {
       backgroundColor: 'white',
