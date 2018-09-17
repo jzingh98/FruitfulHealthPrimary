@@ -29,6 +29,10 @@ export default class Welcome extends React.Component {
                      paddingTop: '70%',
                      width: '15%',
                      height: '45%',
+                     shadowColor: 'white',
+                     shadowOffset: {width: 1, height: 2},
+                     shadowOpacity: 1,
+                     shadowRadius: 1,
                    }}
                 source={require('../../images/fruitfulFriends.png')}/>
 
@@ -45,7 +49,7 @@ export default class Welcome extends React.Component {
 
             <TouchableOpacity style={styles.understood}
                 onPress={async () => {
-                    this.props.navigation.navigate('GetStarted');
+                    this.props.navigation.navigate('HealthConcerns');
                 }}
               >
             <CustomText
@@ -70,7 +74,7 @@ export default class Welcome extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#E56A58',
+    backgroundColor: '#222644',
     height: '100%',
     justifyContent: 'center',
     alignItems: 'center'

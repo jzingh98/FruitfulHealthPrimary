@@ -28,7 +28,11 @@ export default class GetStarted extends React.Component {
                      paddingTop: '30%',
                      width: '32%',
                      height: '42%',
-                     resizeMode: 'contain'
+                     resizeMode: 'contain',
+                     shadowColor: 'white',
+                     shadowOffset: {width: 1, height: 2},
+                     shadowOpacity: 1,
+                     shadowRadius: 1,
                    }}
                 source={require('../../images/yourAvatar.png')}/>
 
@@ -74,7 +78,7 @@ COINS to feed it and stay healthy!</CustomText>
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#E56A58',
+    backgroundColor: '#222644',
     height: '100%',
     width: '100%',
     justifyContent: 'center',

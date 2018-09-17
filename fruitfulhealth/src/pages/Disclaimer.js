@@ -29,13 +29,13 @@ render() {
                fontFamily: 'Avenir-Light',
                fontSize: 18,
                color: 'white',
-               textAlign: 'justified',
+               textAlign: 'justify',
              }}
           >The Content is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health professionals with any questions you may have.</CustomText>
 
       <TouchableOpacity style={styles.understood}
           onPress={async () => {
-              this.props.navigation.navigate('Welcome'); 
+              this.props.navigation.navigate('Welcome');
           }}
         >
       <CustomText
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     height: '100%',
-    backgroundColor: '#E56A58'
+    backgroundColor: '#222644'
   },
   understood: {
     borderRadius: 4,
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     top: '5%',
     shadowColor: 'grey',
     shadowOffset: {width: 2, height: 2},
-    shadowOpacity: 0.8,
+    shadowOpacity: 0.2,
     shadowRadius: 4,
     elevation: 2,
   },

@@ -46,7 +46,7 @@ export default class HealthConcerns extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#E56A58',
+    backgroundColor: '#222644',
     alignItems: 'center',
   },
 
