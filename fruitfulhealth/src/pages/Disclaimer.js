@@ -35,7 +35,7 @@ render() {
 
       <TouchableOpacity style={styles.understood}
           onPress={async () => {
-              this.props.navigation.navigate('Welcome'); // Redirect from Introduction to another page later
+              this.props.navigation.navigate('Welcome'); 
           }}
         >
       <CustomText

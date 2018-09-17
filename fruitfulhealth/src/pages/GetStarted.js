@@ -2,15 +2,13 @@ import React from 'react';
 import { TouchableOpacity, StyleSheet, View, Button, Image, ImageBackground, TextInput} from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import CustomText from '../common/CustomText';
-import Disclaimer from './Disclaimer';
+import Welcome from './Welcome';
 
 
-export default class Welcome extends React.Component {
-
+export default class GetStarted extends React.Component {
     render() {
     return (
           <View style={styles.container}>
-
             <View>
              <CustomText
                    style={{
@@ -21,16 +19,18 @@ export default class Welcome extends React.Component {
                      fontWeight: 'bold',
                      marginTop: 30,
                    }}
-                >Welcome to {"\n"} Fruitful Health</CustomText>
+                >Your Health Avatar {"\n"}</CustomText>
 
             <Image
                    style={{
-                     paddingLeft: '100%',
-                     paddingTop: '70%',
-                     width: '15%',
-                     height: '45%',
+                     paddingLeft: '70%',
+                     paddingRight: '20%',
+                     paddingTop: '30%',
+                     width: '32%',
+                     height: '42%',
+                     resizeMode: 'contain'
                    }}
-                source={require('../../images/fruitfulFriends.png')}/>
+                source={require('../../images/yourAvatar.png')}/>
 
             <CustomText
                    style={{
@@ -38,12 +38,17 @@ export default class Welcome extends React.Component {
                      paddingTop: 15,
                      fontFamily: 'Avenir-Light',
                      fontSize: 20,
+                     fontWeight: '400',
                      color: 'white',
                      textAlign: 'center',
                    }}
-                >We're honored that you've chosen us {"\n"} to help you manage your health.</CustomText>
+                >Your fruitful avatar is here to help.{"\n"}
+It is a visual representation of you.{"\n"}
+Its expressions let you know how
+you’ve been keeping on track. Earn
+COINS to feed it and stay healthy!</CustomText>
 
-            <TouchableOpacity style={styles.understood}
+            <TouchableOpacity style={styles.next}
                 onPress={async () => {
                     this.props.navigation.navigate('GetStarted');
                 }}
@@ -52,14 +57,13 @@ export default class Welcome extends React.Component {
                 style={{
                 fontSize: 22,
                 color: 'white',
+                paddingTop: '5%',
                 textAlign: 'center',
                 fontWeight: 'bold',
                 fontFamily: 'Avenir-Light',
-                paddingTop:'3%',
-                paddingLeft:'3%',
-                paddingRight: '3%'
+
                 }}
-                >Get Started</CustomText>
+                >Next</CustomText>
               </TouchableOpacity>
             </View>
 
@@ -72,10 +76,11 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#E56A58',
     height: '100%',
+    width: '100%',
     justifyContent: 'center',
     alignItems: 'center'
   },
-  understood: {
+  next: {
     borderRadius: 11,
     paddingLeft: '10%',
     paddingRight: '10%',
@@ -83,7 +88,7 @@ const styles = StyleSheet.create({
     width: '100%',
     backgroundColor: '#57BDC1',
     justifyContent: 'center',
-    marginTop: '5%',
-    marginLeft: '24%',
+    marginTop: '10%',
+    marginLeft: '28%',
   },
 });

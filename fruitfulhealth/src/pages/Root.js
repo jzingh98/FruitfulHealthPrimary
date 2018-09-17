@@ -3,6 +3,7 @@ import { createStackNavigator } from 'react-navigation';
 import Login from './Login';
 import Disclaimer from './Disclaimer';
 import Welcome from './Welcome';
+import GetStarted from './GetStarted';
 
 const RootStack = createStackNavigator({
   Login: {
@@ -13,9 +14,12 @@ const RootStack = createStackNavigator({
   },
   Welcome: {
       screen: Welcome,
+  },
+  GetStarted: {
+      screen: GetStarted,
   }
 }, {
-  initialRouteName: 'Welcome',
+  initialRouteName: 'GetStarted',
   navigationOptions: {
     headerStyle: {
       backgroundColor: 'white',

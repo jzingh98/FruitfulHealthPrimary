@@ -45,7 +45,7 @@ constructor(props) {
                     this.props.navigation.navigate('Disclaimer');}}>
                     <CustomText
                     style={{
-                        color: '#9F493D',
+                        color: 'white',
                         fontSize: 20,
                         fontFamily: 'Avenir',
                         textAlign: 'center'
