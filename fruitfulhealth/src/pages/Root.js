@@ -4,6 +4,8 @@ import Login from './Login';
 import Disclaimer from './Disclaimer';
 import Welcome from './Welcome';
 import GetStarted from './GetStarted';
+import Questions from './Questions';
+import HealthConcerns from './HealthConcerns';
 
 const RootStack = createStackNavigator({
   Login: {
@@ -17,9 +19,15 @@ const RootStack = createStackNavigator({
   },
   GetStarted: {
       screen: GetStarted,
+  },
+  Questions: {
+      screen: Questions,
+  },
+  HealthConcerns: {
+      screen: HealthConcerns,
   }
 }, {
-  initialRouteName: 'GetStarted',
+  initialRouteName: 'HealthConcerns',
   navigationOptions: {
     headerStyle: {
       backgroundColor: 'white',

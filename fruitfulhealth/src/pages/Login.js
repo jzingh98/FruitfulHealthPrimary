@@ -13,7 +13,7 @@ constructor(props) {
   render() {
     return (
         <ScrollView style={styles.scroll}>
-                <Image style={styles.logo} source={require('../../images/apple-touch-icon.png')} />
+                <Image style={styles.logo} source={require('../../images/logo.png')} />
                 <Text style={styles.textlogo}> Fruitful </Text>
                 <Text style={styles.textlogo}> Health </Text>
             <Container>
@@ -93,10 +93,10 @@ loginButton: {
     borderRadius: 10
 },
 logo: {
-        paddingTop: '85%',
         width: '50%',
-        height: '40%',
+        height: '50%',
         paddingLeft: '100%',
+        resizeMode: 'contain'
 },
 textlogo: {
     textAlign: 'center',

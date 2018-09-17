@@ -1,0 +1,53 @@
+import React from 'react';
+import { StyleSheet, Text, View, Button, Modal, TouchableHighlight, TouchableOpacity} from 'react-native';
+import CustomText from '../common/CustomText';
+import Questions from './Questions';
+
+export default class HealthConcerns extends React.Component {
+
+  render() {
+
+    return (
+      <View style={styles.container}>
+      <View>
+      <CustomText
+            style={{
+              fontFamily: 'Avenir',
+              fontSize: 35,
+              color: 'white',
+              textAlign: 'left',
+              fontWeight: 'bold',
+              marginTop: 30,
+            }}
+         >What are your{"\n"}Health Concerns?</CustomText>
+        <CustomText
+            style={{
+                fontFamily: 'Avenir',
+                fontSize: 20,
+                color: 'white',
+                textAlign: 'left',
+                fontWeight: 'bold',
+                marginTop: 15
+            }}
+        > Add up to 3 and we{"'"}ll {"\n"} communicate these to your
+        {"\n"} doctor to ensure they give
+        {"\n"} you the best care. </CustomText>
+        </View>
+
+
+
+      </View>
+    );
+  }
+}
+
+
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#E56A58',
+    alignItems: 'center',
+  },
+
+});
