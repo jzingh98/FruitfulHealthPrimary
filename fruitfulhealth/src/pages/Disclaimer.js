@@ -7,6 +7,9 @@ import Label from '../components/Label';
 import CustomText from '../common/CustomText';
 
 export default class Disclaimer extends React.Component {
+    static navigationOptions = {
+        header: null,
+      };
 render() {
    return (
        <View style={styles.container}>
@@ -17,7 +20,7 @@ render() {
                color: 'white',
                textAlign: 'center',
                fontWeight: 'bold',
-               top: '10%'
+               marginTop: '30%'
              }}
           >DISCLAIMER</CustomText>
 

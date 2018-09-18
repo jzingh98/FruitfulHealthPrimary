@@ -6,7 +6,9 @@ import GetStarted from './GetStarted';
 
 
 export default class Questions extends React.Component {
-
+    static navigationOptions = {
+        header: null,
+      };
     render() {
     return (
           <View style={styles.container}>
@@ -60,7 +62,7 @@ export default class Questions extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#E56A58',
+    backgroundColor: '#222644',
     height: '100%',
     justifyContent: 'center',
     alignItems: 'center'

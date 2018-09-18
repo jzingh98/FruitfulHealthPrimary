@@ -6,7 +6,9 @@ import Disclaimer from './Disclaimer';
 
 
 export default class Welcome extends React.Component {
-
+    static navigationOptions = {
+        header: null,
+      };
     render() {
     return (
           <View style={styles.container}>

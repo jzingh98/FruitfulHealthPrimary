@@ -1,10 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, Modal, TouchableHighlight, TouchableOpacity} from 'react-native';
+import { TouchableOpacity, StyleSheet, View, ImageBackground, Platform} from 'react-native';
+import FormInput from '../common/FormInput';
+import HeaderText from '../common/HeaderText';
 import CustomText from '../common/CustomText';
 import HealthConcerns from './HealthConcerns';
 
 export default class FindDoctor extends React.Component {
-
+    static navigationOptions = {
+        header: null,
+      };
   render() {
 
     return (
@@ -17,7 +21,7 @@ export default class FindDoctor extends React.Component {
               color: 'white',
               textAlign: 'left',
               fontWeight: 'bold',
-              marginTop: 30,
+              marginTop: '50%',
             }}
          >Find your doctor</CustomText>
         <CustomText

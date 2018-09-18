@@ -6,10 +6,14 @@ import Label from '../components/Label';
 import CustomText from '../common/CustomText.js';
 
 export default class Login extends Component {
+    static navigationOptions = {
+        header: null,
+      };
 constructor(props) {
     super(props);
     this.state = {password: 'Password' };
  }
+
   render() {
     return (
         <ScrollView style={styles.scroll}>
@@ -93,17 +97,18 @@ loginButton: {
     borderRadius: 10
 },
 logo: {
-        width: '50%',
-        height: '50%',
-        paddingLeft: '100%',
-        resizeMode: 'contain'
+    width: '40%',
+    height: '40%',
+    paddingLeft: '100%',
+    marginTop: '10%', //Using this instead of paddingTop ensures size is kept constant
+    resizeMode: 'contain'
 },
 textlogo: {
     textAlign: 'center',
     fontFamily: 'Avenir-Light',
     color: 'white',
     fontWeight: '900',
-    fontSize: 30
+    fontSize: 50
 }});
 
 

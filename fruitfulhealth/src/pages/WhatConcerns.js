@@ -4,7 +4,9 @@ import CustomText from '../common/CustomText';
 import Questions from './Questions';
 
 export default class WhatConcerns extends React.Component {
-
+    static navigationOptions = {
+        header: null,
+      };
   render() {
 
     return (
@@ -17,7 +19,7 @@ export default class WhatConcerns extends React.Component {
               color: 'white',
               textAlign: 'left',
               fontWeight: 'bold',
-              marginTop: 30,
+              marginTop: '50%',
             }}
          >What are your{"\n"}Health Concerns?</CustomText>
         <CustomText

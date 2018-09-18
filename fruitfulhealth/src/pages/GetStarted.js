@@ -6,6 +6,9 @@ import Welcome from './Welcome';
 
 
 export default class GetStarted extends React.Component {
+    static navigationOptions = {
+        header: null,
+      };
     render() {
     return (
           <View style={styles.container}>

@@ -35,7 +35,7 @@ const RootStack = createStackNavigator({
       screen: FindDoctor,
   }
 }, {
-  initialRouteName: 'Login',
+  initialRouteName: 'WhatConcerns',
   navigationOptions: {
     headerStyle: {
       backgroundColor: 'white',
