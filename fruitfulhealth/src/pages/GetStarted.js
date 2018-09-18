@@ -57,7 +57,7 @@ COINS to feed it and stay healthy!</CustomText>
 
             <TouchableOpacity style={styles.next}
                 onPress={async () => {
-                    this.props.navigation.navigate('Login');
+                    this.props.navigation.navigate('Home');
                 }}
               >
             <CustomText
@@ -68,7 +68,6 @@ COINS to feed it and stay healthy!</CustomText>
                 textAlign: 'center',
                 fontWeight: 'bold',
                 fontFamily: 'Avenir-Light',
-
                 }}
                 >Next</CustomText>
               </TouchableOpacity>

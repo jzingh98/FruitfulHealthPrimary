@@ -20,7 +20,7 @@ export default class Questions extends React.Component {
                      fontSize: 17,
                      color: 'white',
                      textAlign: 'center',
-                     fontWeight: '150',
+                     fontWeight: '200',
                      marginTop: 30,
                    }}
                 >In order for us to do our best, {"\n"} we{"'"}re going to need you to {"\n"} answer a few questions.</CustomText>

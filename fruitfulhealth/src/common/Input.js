@@ -6,7 +6,7 @@ export default class Input extends React.Component {
     return (
       <TextInput style={styles.container}
         placeholder={this.props.placeholder}
-        placeholderTextColor='grey'
+        placeholderTextColor='white'
         onChangeText={this.props.onChangeText}
         secureTextEntry={this.props.secureTextEntry}
         underlineColorAndroid='transparent'

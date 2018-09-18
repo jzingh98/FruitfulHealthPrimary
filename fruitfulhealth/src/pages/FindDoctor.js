@@ -24,37 +24,30 @@ export default class FindDoctor extends React.Component {
               marginTop: '50%',
             }}
          >Find your doctor</CustomText>
-        <CustomText
-            style={{
-                fontFamily: 'Avenir',
-                fontSize: 20,
-                color: 'white',
-                textAlign: 'left',
-                fontWeight: 'bold',
-                marginTop: 15
-            }}
-        > On a scale of {"1"} (low) to {"5"} (high) </CustomText>
-        </View>
-        <TouchableOpacity style={styles.next}
-            onPress={async () => {
-                this.props.navigation.navigate('FindDoctor');
-            }}
-          >
+         <View style={styles.form}>
+             <FormInput placeholder="Doctor's First and Last Name"
+             />
+             <FormInput placeholder="Name of Hospital"
+             />
+             <FormInput placeholder="ZIP Code"
+             />
+         </View>
+         <View>
+        <TouchableOpacity style={styles.button}
+          onPress={() => this.props.navigation.navigate('GetStarted')}
+        >
         <CustomText
             style={{
             fontSize: 22,
             color: 'white',
-            paddingTop: '5%',
             textAlign: 'center',
             fontWeight: 'bold',
             fontFamily: 'Avenir-Light',
-
             }}
-            >Next</CustomText>
-          </TouchableOpacity>
-
-
-
+          >Submit</CustomText>
+         </TouchableOpacity>
+         </View>
+         </View>
       </View>
     );
   }
@@ -68,5 +61,21 @@ const styles = StyleSheet.create({
     backgroundColor: '#222644',
     alignItems: 'center',
   },
-
+  button: {
+    flex: 0.3,
+    backgroundColor: '#57BDC1',
+    width: '50%',
+    height: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 11,
+    marginLeft: '25%',
+    paddingLeft: '10%',
+    paddingRight: '10%',
+  },
+  form: {
+    flex: 1,
+    width: '100%',
+    justifyContent: 'center',
+  },
 });
