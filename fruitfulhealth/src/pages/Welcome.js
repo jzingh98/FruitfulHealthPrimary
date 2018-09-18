@@ -49,7 +49,7 @@ export default class Welcome extends React.Component {
 
             <TouchableOpacity style={styles.understood}
                 onPress={async () => {
-                    this.props.navigation.navigate('HealthConcerns');
+                    this.props.navigation.navigate('Questions');
                 }}
               >
             <CustomText

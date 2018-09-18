@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Button, Modal, TouchableHighlight, TouchableOpa
 import CustomText from '../common/CustomText';
 import Questions from './Questions';
 
-export default class HealthConcerns extends React.Component {
+export default class WhatConcerns extends React.Component {
 
   render() {
 
@@ -19,7 +19,7 @@ export default class HealthConcerns extends React.Component {
               fontWeight: 'bold',
               marginTop: 30,
             }}
-         >Rank your{"\n"}concerns</CustomText>
+         >What are your{"\n"}Health Concerns?</CustomText>
         <CustomText
             style={{
                 fontFamily: 'Avenir',
@@ -29,11 +29,13 @@ export default class HealthConcerns extends React.Component {
                 fontWeight: 'bold',
                 marginTop: 15
             }}
-        > On a scale of {"1"} (low) to {"5"} (high) </CustomText>
+        > Add up to 3 and we{"'"}ll {"\n"} communicate these to your
+        {"\n"} doctor to ensure they give
+        {"\n"} you the best care. </CustomText>
         </View>
         <TouchableOpacity style={styles.next}
             onPress={async () => {
-                this.props.navigation.navigate('FindDoctor');
+                this.props.navigation.navigate('HealthConcerns');
             }}
           >
         <CustomText

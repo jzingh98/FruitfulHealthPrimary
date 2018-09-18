@@ -22,9 +22,12 @@
     "babel-core": "^6.0.0",
     "eslint": "^3.17.0",
     "expo": "^27.0.1",
-    "prop-types": "^15.0.0",
+    "prop-types": "^15.5.7",
     "react": "16.3.1",
+    "react-dom": "^16.5.1",
     "react-native": "~0.55.2",
+    "react-native-sortable-list": "^0.0.22",
+    "react-native-sortable-listview": "^0.2.8",
     "react-navigation": "^2.13.0"
   }
 }

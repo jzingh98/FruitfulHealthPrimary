@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, Modal, TouchableHighlight, TouchableOpacity} from 'react-native';
 import CustomText from '../common/CustomText';
-import Questions from './Questions';
+import HealthConcerns from './HealthConcerns';
 
-export default class HealthConcerns extends React.Component {
+export default class FindDoctor extends React.Component {
 
   render() {
 
@@ -19,7 +19,7 @@ export default class HealthConcerns extends React.Component {
               fontWeight: 'bold',
               marginTop: 30,
             }}
-         >Rank your{"\n"}concerns</CustomText>
+         >Find your doctor</CustomText>
         <CustomText
             style={{
                 fontFamily: 'Avenir',
