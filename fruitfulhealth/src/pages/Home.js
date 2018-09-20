@@ -14,19 +14,19 @@ export default class Home extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-      <ScrollView>
+      <ScrollView style={styles.scroll}>
       </ScrollView>
-      <View style={{position: 'absolute', left: 0, right: 0, bottom: 0}}>
-            <TouchableHighlight onPress={() => this.props.navigation.navigate('Health')}>
-                <Image source={require("../../images/health.png")}/>
+      <View style={styles.bottom}>
+            <TouchableHighlight style={styles.fullWidthButton} onPress={() => this.props.navigation.navigate('Health')}>
+                <Image style={styles.images} source={require("../../images/health.png")}/>
             </TouchableHighlight>
 
-            <TouchableHighlight onPress={() => this.props.navigation.navigate('Home')}>
-                <Image source={require("../../images/home.png")}/>
+            <TouchableHighlight style={styles.fullWidthButton} onPress={() => this.props.navigation.navigate('Home')}>
+                <Image style={styles.images} source={require("../../images/home.png")}/>
             </TouchableHighlight>
 
-            <TouchableHighlight onPress={() => this.props.navigation.navigate('Profile')}>
-             <Image source={require("../../images/profile.png")}/>
+            <TouchableHighlight style={styles.fullWidthButton} onPress={() => this.props.navigation.navigate('Profile')}>
+             <Image style={styles.images} source={require("../../images/profile.png")}/>
             </TouchableHighlight>
       </View>
       </View>
@@ -37,20 +37,19 @@ export default class Home extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'column',
     backgroundColor: '#222644'
   },
-  top: {
+  scroll: {
+      flex: 0.7,
+      flexDirection: 'column'
   },
   bottom: {
-      height:10,
-      width: 10,
-      alignItems: 'baseline',
-      flexDirection: 'row'
-
+      flex: 0.3,
+      flexDirection: 'row',
   },
   fullWidthButton: {
-          flexDirection: 'row',
-          alignSelf: 'stretch',
-          justifyContent: 'space-between'
-  },
+      flex: 0.33,
+      flexDirection: 'row'
+  }
 });

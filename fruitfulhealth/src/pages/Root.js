@@ -5,9 +5,10 @@ import Disclaimer from './Disclaimer';
 import Welcome from './Welcome';
 import GetStarted from './GetStarted';
 import Questions from './Questions';
-import WhatConcerns from './WhatConcerns';
+import AddConcerns from './AddConcerns';
 import HealthConcerns from './HealthConcerns';
 import FindDoctor from './FindDoctor';
+import Home from './Home';
 
 const RootStack = createStackNavigator({
   Login: {
@@ -25,17 +26,20 @@ const RootStack = createStackNavigator({
   Questions: {
       screen: Questions,
   },
-  WhatConcerns: {
-      screen: WhatConcerns,
+  AddConcerns: {
+      screen: AddConcerns,
   },
   HealthConcerns: {
       screen: HealthConcerns,
   },
   FindDoctor: {
       screen: FindDoctor,
-  }
+  },
+  Home: {
+      screen: Home,
+  },
 }, {
-  initialRouteName: 'WhatConcerns',
+  initialRouteName: 'AddConcerns',
   navigationOptions: {
     headerStyle: {
       backgroundColor: 'white',

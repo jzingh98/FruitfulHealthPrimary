@@ -38,7 +38,7 @@ export default class Questions extends React.Component {
             <Image style={styles.coin} source={require('../../images/coin.png')} />
             <TouchableOpacity style={styles.understood}
                 onPress={async () => {
-                    this.props.navigation.navigate('WhatConcerns');
+                    this.props.navigation.navigate('AddConcerns');
                 }}
               >
               <CustomText
