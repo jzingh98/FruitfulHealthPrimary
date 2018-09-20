@@ -9,6 +9,13 @@ export default class FindDoctor extends React.Component {
     static navigationOptions = {
         header: null,
       };
+     constructor(props){
+         super(props);
+         this.state= {zip: ""};
+     }
+     _handleTextChange = event => {
+         this.setState({zip: event.nativeEvent.text})
+     }
   render() {
 
     return (
@@ -25,11 +32,13 @@ export default class FindDoctor extends React.Component {
             }}
          >Find your doctor</CustomText>
          <View style={styles.form}>
-             <FormInput placeholder="Doctor's First and Last Name"
+             <FormInput maxLength={28} placeholder="Doctor's First Name" onSubmitEditing={this._handleTextChange}
              />
-             <FormInput placeholder="Name of Hospital"
+             <FormInput maxLength={28} placeholder="Doctor's Last Name" onSubmitEditing={this._handleTextChange}
              />
-             <FormInput placeholder="ZIP Code"
+             <FormInput maxLength={28} placeholder="Name of Hospital" onSubmitEditing={this._handleTextChange}
+             />
+             <FormInput maxLength={8} placeholder="ZIP Code" onSubmitEditing={this._handleTextChange}
              />
          </View>
          <View>
