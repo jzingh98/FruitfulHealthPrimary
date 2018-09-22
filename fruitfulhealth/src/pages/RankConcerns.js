@@ -4,6 +4,9 @@ import { StyleSheet, Text, View, Button, Modal, TouchableHighlight, TouchableOpa
 import CustomText from '../common/CustomText';
 import Questions from './Questions';
 
+const CB_ENABLED_IMAGE = require('../../images/checked.png');
+const CB_DISABLED_IMAGE = require('../../images/unchecked.png');
+
 
 export default class RankConcerns extends React.Component {
     static navigationOptions = {
@@ -175,4 +178,20 @@ next: {
   justifyContent: 'center',
   marginTop: 50
 },
+checkbox: {
+    width: 36,
+    height: 36
+},
+labelContainer: {
+    marginLeft: 10,
+    marginRight: 10,
+},
+label: {
+    fontSize: 15,
+    fontFamily: 'Avenir',
+    fontWeight: 'bold',
+    color: 'white'
+},
+checkImage: CB_ENABLED_IMAGE,
+uncheckedImage: CB_DISABLED_IMAGE,
 });

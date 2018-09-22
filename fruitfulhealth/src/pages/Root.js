@@ -39,7 +39,7 @@ const RootStack = createStackNavigator({
       screen: Home,
   },
 }, {
-  initialRouteName: 'RankConcerns',
+  initialRouteName: 'Login',
   navigationOptions: {
     headerStyle: {
       backgroundColor: 'white',

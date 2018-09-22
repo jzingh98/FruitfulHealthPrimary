@@ -100,5 +100,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginTop: 100
   },
+  checkbox: {
+      width: 36,
+      height: 36
+  },
+  label: {
+      fontSize: 15,
+      fontFamily: 'Avenir',
+      fontWeight: 'bold',
+      color: 'white'
+  }
 
 });
