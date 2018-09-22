@@ -3,7 +3,7 @@ import { TouchableOpacity, StyleSheet, View, ImageBackground, Platform} from 're
 import FormInput from '../common/FormInput';
 import HeaderText from '../common/HeaderText';
 import CustomText from '../common/CustomText';
-import HealthConcerns from './HealthConcerns';
+import RankConcerns from './RankConcerns';
 
 export default class FindDoctor extends React.Component {
     static navigationOptions = {

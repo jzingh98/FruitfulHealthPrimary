@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, Button, Modal, TouchableHighlight, TouchableOpa
 import CustomText from '../common/CustomText';
 import Questions from './Questions';
 
-export default class HealthConcerns extends React.Component {
+export default class RankConcerns extends React.Component {
     static navigationOptions = {
         header: null,
       };
