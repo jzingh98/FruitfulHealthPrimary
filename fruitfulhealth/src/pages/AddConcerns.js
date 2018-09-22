@@ -42,12 +42,28 @@ export default class AddConcerns extends React.Component {
                 marginTop: 15
             }}
         > Please select all that apply. {"\n"} </CustomText>
+        <View styles={{alignItems:'center'}}>
         <CheckBox
-          label='Diabetes/Pre-diabetes'
+          label='Diabetes/Pre-Diabetes'
           onChange={this.checkBoxChanged.bind(this)}
         />
-
-
+        <CheckBox
+          label='High Blood Pressure'
+          onChange={this.checkBoxChanged.bind(this)}
+        />
+        <CheckBox
+          label='High Cholesterol'
+          onChange={this.checkBoxChanged.bind(this)}
+        />
+        <CheckBox
+          label='Heart Disease'
+          onChange={this.checkBoxChanged.bind(this)}
+        />
+        <CheckBox
+          label='Other'
+          onChange={this.checkBoxChanged.bind(this)}
+        />
+        </View>
         <TouchableOpacity style={styles.next}
             onPress={async () => {
                 this.props.navigation.navigate('RankConcerns');
@@ -76,21 +92,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#222644',
     alignItems: 'center',
   },
-  textInput: {
-      height: 60,
-      fontSize: 20,
-      backgroundColor: '#FFF',
-      fontFamily: 'Avenir',
-      paddingLeft: '5%',
-      borderRadius: 10,
-      color: 'grey'
-  },
   next: {
     borderRadius: 11,
-    height: '10%',
-    width: '50%',
+    height: '5%',
+    width: '35%',
     backgroundColor: '#57BDC1',
     justifyContent: 'center',
+    marginTop: 100
   },
 
 });

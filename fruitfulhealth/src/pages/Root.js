@@ -6,7 +6,7 @@ import Welcome from './Welcome';
 import GetStarted from './GetStarted';
 import Questions from './Questions';
 import AddConcerns from './AddConcerns';
-import HealthConcerns from './HealthConcerns';
+import RankConcerns from './RankConcerns';
 import FindDoctor from './FindDoctor';
 import Home from './Home';
 
@@ -29,8 +29,8 @@ const RootStack = createStackNavigator({
   AddConcerns: {
       screen: AddConcerns,
   },
-  HealthConcerns: {
-      screen: HealthConcerns,
+  RankConcerns: {
+      screen: RankConcerns,
   },
   FindDoctor: {
       screen: FindDoctor,
