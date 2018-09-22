@@ -12,9 +12,9 @@ export default class Questions extends React.Component {
     render() {
     return (
           <View style={styles.container}>
-            <View>
             <Image style={styles.logo} source={require('../../images/logo.png')} />
-             <CustomText
+            <View style={styles.message}>
+            <CustomText
                    style={{
                      fontFamily: 'Avenir-Light',
                      fontSize: 17,
@@ -26,17 +26,28 @@ export default class Questions extends React.Component {
                 >In order for us to do our best, {"\n"} we{"'"}re going to need you to {"\n"} answer a few questions.</CustomText>
             <CustomText
                    style={{
-                     padding: 10,
-                     paddingTop: 15,
+                     marginTop: 15,
                      fontFamily: 'Avenir-Light',
                      fontSize: 17,
                      color: 'white',
                      textAlign: 'center',
-                     fontWeight: '150',
+                     fontWeight: '200',
                    }}
-                >For every answer,you earn 10 {"\n"} COINS to help get you started {"\n"} on your Fruitful Health {"\n"} journey!</CustomText>
+                >For every answer, you will earn 10 {"\n"} coins to help get you started {"\n"} on your Fruitful Health journey.</CustomText>
+                <CustomText
+                       style={{
+                         marginTop: 15,
+                         fontFamily: 'Avenir-Light',
+                         fontSize: 17,
+                         color: 'white',
+                         textAlign: 'center',
+                         fontWeight: '200',
+                       }}
+                    >Coins are earned tokens you collect {"\n"} to enter the weekly lottery contest {"\n"} held every Sunday for our
+mystery prize!</CustomText>
+            </View>
             <Image style={styles.coin} source={require('../../images/coin.png')} />
-            <TouchableOpacity style={styles.understood}
+            <TouchableOpacity style={styles.button}
                 onPress={async () => {
                     this.props.navigation.navigate('AddConcerns');
                 }}
@@ -45,16 +56,12 @@ export default class Questions extends React.Component {
                   style={{
                   fontSize: 22,
                   color: 'white',
-                  paddingTop: '5%',
                   textAlign: 'center',
-                  fontWeight: 'bold',
+                  fontWeight: '400',
                   fontFamily: 'Avenir-Light',
-
                   }}
-                  >Next</CustomText>
+                  >Continue</CustomText>
               </TouchableOpacity>
-            </View>
-
           </View>
       );
   }
@@ -62,32 +69,31 @@ export default class Questions extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#222644',
-    height: '100%',
-    justifyContent: 'center',
-    alignItems: 'center'
+      flex: 1,
+      flexDirection: 'column',
+      alignItems: 'center',
+      backgroundColor: '#222644',
   },
   logo: {
-          width: '30%',
-          height: '30%',
-          paddingLeft: '100%',
-          resizeMode: 'contain'
+      flex: 1,
+      resizeMode: 'contain',
+      marginTop: '15%'
+  },
+  message: {
+      flex: 1,
   },
   coin: {
-          width: '10%',
-          height: '10%',
-          paddingLeft: '100%',
-          resizeMode: 'contain'
+      flex: 0.4,
+      resizeMode: 'contain',
+      marginTop: '25%',
+      marginBottom: '15%'
+
   },
-  understood: {
-    backgroundColor: '#57BDC1',
-    borderRadius: 11,
-    height: '10%',
-    width: '100%',
-    justifyContent: 'center',
-    marginLeft: '33%',
-    marginTop: '10%',
-    paddingLeft: '10%',
-    paddingRight: '10%',
+  button: {
+      backgroundColor: '#57BDC1',
+      height: '7%',
+      padding: 10,
+      borderRadius: 11,
+      marginBottom: 100
   },
 });
