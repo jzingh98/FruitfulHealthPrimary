@@ -12,35 +12,35 @@ export default class Welcome extends React.Component {
     render() {
     return (
           <View style={styles.container}>
-
             <View>
              <CustomText
                    style={{
+                     flex: 0.3,
                      fontFamily: 'Avenir-Light',
                      fontSize: 25,
                      color: 'white',
                      textAlign: 'center',
                      fontWeight: 'bold',
-                     marginTop: 30,
+                     marginTop: 150,
                    }}
                 >Welcome to {"\n"} Fruitful Health</CustomText>
 
             <Image
                    style={{
-                     paddingLeft: '100%',
-                     paddingTop: '70%',
-                     width: '15%',
-                     height: '45%',
+                     flex: 0.5,
+                     marginLeft: '30%',
+                     marginRight: '30%',
                      shadowColor: 'white',
-                     shadowOffset: {width: 1, height: 2},
+                     shadowOffset: {width: 0, height: 0},
                      shadowOpacity: 1,
                      shadowRadius: 1,
+                     resizeMode: 'contain',
                    }}
                 source={require('../../images/fruitfulFriends.png')}/>
 
             <CustomText
                    style={{
-                     padding: 10,
+                     flex: 0.3,
                      paddingTop: 15,
                      fontFamily: 'Avenir-Light',
                      fontSize: 20,
@@ -60,10 +60,7 @@ export default class Welcome extends React.Component {
                 color: 'white',
                 textAlign: 'center',
                 fontWeight: 'bold',
-                fontFamily: 'Avenir-Light',
-                paddingTop:'3%',
-                paddingLeft:'3%',
-                paddingRight: '3%'
+                fontFamily: 'Avenir',
                 }}
                 >Get Started</CustomText>
               </TouchableOpacity>
@@ -76,20 +73,22 @@ export default class Welcome extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     backgroundColor: '#222644',
     height: '100%',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    flexDirection: 'column'
   },
   understood: {
+    flex: 0.2,
     borderRadius: 11,
-    paddingLeft: '10%',
-    paddingRight: '10%',
-    height: '10%',
-    width: '100%',
     backgroundColor: '#57BDC1',
-    justifyContent: 'center',
-    marginTop: '5%',
-    marginLeft: '24%',
+    marginBottom: 100,
+    width: 270,
+    height: 51,
+    alignSelf: 'center', //puts button in center of area
+    justifyContent: 'center'
+
   },
 });
