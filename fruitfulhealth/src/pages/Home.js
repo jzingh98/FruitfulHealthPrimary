@@ -1,7 +1,7 @@
 import React from 'react';
 import { TouchableHighlight, StyleSheet, View, Image, ScrollView} from 'react-native';
 import CustomText from '../common/CustomText';
-import GetStarted from './GetStarted';
+import YourAvatar from './YourAvatar';
 
 export default class Home extends React.Component {
   static navigationOptions = {

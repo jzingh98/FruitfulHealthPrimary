@@ -43,7 +43,7 @@ export default class FindDoctor extends React.Component {
          </View>
          <View>
         <TouchableOpacity style={styles.button}
-          onPress={() => this.props.navigation.navigate('GetStarted')}
+          onPress={() => this.props.navigation.navigate('YourAvatar')}
         >
         <CustomText
             style={{
@@ -73,14 +73,11 @@ const styles = StyleSheet.create({
   button: {
     flex: 0.3,
     backgroundColor: '#57BDC1',
-    width: '50%',
-    height: 1,
+    width: 270,
+    height: 51,
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 11,
-    marginLeft: '25%',
-    paddingLeft: '10%',
-    paddingRight: '10%',
   },
   form: {
     flex: 1,

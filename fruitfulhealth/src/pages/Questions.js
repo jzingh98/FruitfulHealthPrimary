@@ -2,7 +2,7 @@ import React from 'react';
 import { TouchableOpacity, StyleSheet, View, Button, Image, ImageBackground, TextInput} from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import CustomText from '../common/CustomText';
-import GetStarted from './GetStarted';
+import YourAvatar from './YourAvatar';
 
 
 export default class Questions extends React.Component {
@@ -12,16 +12,15 @@ export default class Questions extends React.Component {
     render() {
     return (
           <View style={styles.container}>
-            <Image style={styles.logo} source={require('../../images/logo.png')} />
+            <Image style={styles.coin} source={require('../../images/coin.png')} />
             <View style={styles.message}>
             <CustomText
                    style={{
-                     fontFamily: 'Avenir-Light',
+                     fontFamily: 'Avenir',
                      fontSize: 17,
                      color: 'white',
                      textAlign: 'center',
-                     fontWeight: '200',
-                     marginTop: 30,
+                     fontWeight: 'bold',
                    }}
                 >In order for us to do our best, {"\n"} we{"'"}re going to need you to {"\n"} answer a few questions.</CustomText>
             <CustomText
@@ -31,7 +30,7 @@ export default class Questions extends React.Component {
                      fontSize: 17,
                      color: 'white',
                      textAlign: 'center',
-                     fontWeight: '200',
+                     fontWeight: 'bold',
                    }}
                 >For every answer, you will earn 10 {"\n"} coins to help get you started {"\n"} on your Fruitful Health journey.</CustomText>
                 <CustomText
@@ -41,12 +40,12 @@ export default class Questions extends React.Component {
                          fontSize: 17,
                          color: 'white',
                          textAlign: 'center',
-                         fontWeight: '200',
+                         fontWeight: 'bold',
                        }}
                     >Coins are earned tokens you collect {"\n"} to enter the weekly lottery contest {"\n"} held every Sunday for our
 mystery prize!</CustomText>
             </View>
-            <Image style={styles.coin} source={require('../../images/coin.png')} />
+
             <TouchableOpacity style={styles.button}
                 onPress={async () => {
                     this.props.navigation.navigate('AddConcerns');
@@ -57,8 +56,8 @@ mystery prize!</CustomText>
                   fontSize: 22,
                   color: 'white',
                   textAlign: 'center',
-                  fontWeight: '400',
-                  fontFamily: 'Avenir-Light',
+                  fontWeight: 'bold',
+                  fontFamily: 'Avenir',
                   }}
                   >Continue</CustomText>
               </TouchableOpacity>
@@ -77,7 +76,11 @@ const styles = StyleSheet.create({
   logo: {
       flex: 1,
       resizeMode: 'contain',
-      marginTop: '15%'
+      marginTop: '15%',
+      shadowColor: 'white',
+      shadowOffset: {width: 0, height: 0},
+      shadowOpacity: 1,
+      shadowRadius: 2,
   },
   message: {
       flex: 1,
@@ -85,15 +88,20 @@ const styles = StyleSheet.create({
   coin: {
       flex: 0.4,
       resizeMode: 'contain',
-      marginTop: '25%',
+      marginTop: '35%',
       marginBottom: '15%'
 
   },
   button: {
-      backgroundColor: '#57BDC1',
-      height: '7%',
+      flex: 0.2,
+      borderRadius: 11,
+      alignItems: 'center',
+      backgroundColor: '#00cece',
+      justifyContent: 'center',
       padding: 10,
       borderRadius: 11,
-      marginBottom: 100
+      marginBottom: 100,
+      width: 270,
+      height: 51,
   },
 });

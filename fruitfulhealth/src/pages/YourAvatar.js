@@ -5,7 +5,7 @@ import CustomText from '../common/CustomText';
 import Welcome from './Welcome';
 
 
-export default class GetStarted extends React.Component {
+export default class YourAvatar extends React.Component {
     static navigationOptions = {
         header: null,
       };
@@ -33,9 +33,9 @@ export default class GetStarted extends React.Component {
                      height: '42%',
                      resizeMode: 'contain',
                      shadowColor: 'white',
-                     shadowOffset: {width: 1, height: 2},
+                     shadowOffset: {width: 0, height: 0},
                      shadowOpacity: 1,
-                     shadowRadius: 1,
+                     shadowRadius: 2,
                    }}
                 source={require('../../images/yourAvatar.png')}/>
 
@@ -67,7 +67,7 @@ COINS to feed it and stay healthy!</CustomText>
                 paddingTop: '5%',
                 textAlign: 'center',
                 fontWeight: 'bold',
-                fontFamily: 'Avenir-Light',
+                fontFamily: 'Avenir',
                 }}
                 >Next</CustomText>
               </TouchableOpacity>
@@ -80,6 +80,7 @@ COINS to feed it and stay healthy!</CustomText>
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     backgroundColor: '#222644',
     height: '100%',
     width: '100%',
@@ -87,14 +88,13 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   next: {
-    borderRadius: 11,
-    paddingLeft: '10%',
-    paddingRight: '10%',
-    height: '10%',
-    width: '100%',
-    backgroundColor: '#57BDC1',
-    justifyContent: 'center',
-    marginTop: '10%',
-    marginLeft: '28%',
+      flex: 0.5,
+      borderRadius: 11,
+      backgroundColor: '#00cece',
+      justifyContent: 'center',
+      alignSelf: 'center', //keeps button in center
+      marginTop: 25,
+      width: 270,
+      height: 51,
   },
 });

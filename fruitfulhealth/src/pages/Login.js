@@ -18,8 +18,7 @@ constructor(props) {
     return (
         <ScrollView style={styles.scroll}>
                 <Image style={styles.logo} source={require('../../images/logo.png')} />
-                <Text style={styles.textlogo}> Fruitful </Text>
-                <Text style={styles.textlogo}> Health </Text>
+                <Text style={styles.textlogo}> Fruitful Health</Text>
             <Container>
                 <TextInput
                     style={styles.textInput} placeholder='Username'
@@ -67,7 +66,7 @@ constructor(props) {
 
 const styles = StyleSheet.create({
 scroll: {
-    backgroundColor: '#E56A58',
+    backgroundColor: '#F97156',
     padding: 30,
     flexDirection: 'column' // Optional, but good practice to explicitly define
 },
@@ -86,14 +85,15 @@ textInput: {
 loginText: {
     fontSize: 20,
     color: '#FFF',
-    fontFamily: 'Avenir'
+    fontFamily: 'Avenir',
+    fontWeight: 'bold'
 },
 buttonBlackText: {
     fontSize: 20,
     color: '#595856'
 },
 loginButton: {
-    backgroundColor: '#57BDC1',
+    backgroundColor: '#00cece',
     borderRadius: 10
 },
 logo: {
@@ -108,7 +108,9 @@ textlogo: {
     fontFamily: 'Avenir-Light',
     color: 'white',
     fontWeight: '900',
-    fontSize: 50
+    fontSize: 40,
+    paddingTop: '10%',
+    paddingBottom: '10%'
 }});
 
 

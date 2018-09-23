@@ -3,12 +3,13 @@ import { createStackNavigator } from 'react-navigation';
 import Login from './Login';
 import Disclaimer from './Disclaimer';
 import Welcome from './Welcome';
-import GetStarted from './GetStarted';
+import YourAvatar from './YourAvatar';
 import Questions from './Questions';
 import AddConcerns from './AddConcerns';
 import RankConcerns from './RankConcerns';
 import FindDoctor from './FindDoctor';
 import Home from './Home';
+import Earned10Coins from './Earned10Coins';
 
 const RootStack = createStackNavigator({
   Login: {
@@ -20,8 +21,8 @@ const RootStack = createStackNavigator({
   Welcome: {
       screen: Welcome,
   },
-  GetStarted: {
-      screen: GetStarted,
+  YourAvatar: {
+      screen: YourAvatar,
   },
   Questions: {
       screen: Questions,
@@ -38,8 +39,11 @@ const RootStack = createStackNavigator({
   Home: {
       screen: Home,
   },
+  Earned10Coins: {
+      screen: Earned10Coins,
+  }
 }, {
-  initialRouteName: 'Login',
+  initialRouteName: 'Earned10Coins',
   navigationOptions: {
     headerStyle: {
       backgroundColor: 'white',

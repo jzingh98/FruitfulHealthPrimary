@@ -20,7 +20,7 @@ render() {
                color: 'white',
                textAlign: 'center',
                fontWeight: 'bold',
-               marginTop: '30%'
+               marginTop: '50%'
              }}
           >DISCLAIMER</CustomText>
 
@@ -28,9 +28,9 @@ render() {
              style={{
                paddingLeft: '10%',
                paddingRight: '10%',
-               paddingTop: '25%',
-               fontFamily: 'Avenir-Light',
-               fontSize: 18,
+               paddingTop: '10%',
+               fontFamily: 'Avenir',
+               fontSize: 22,
                color: 'white',
                textAlign: 'justify',
              }}
@@ -63,17 +63,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#222644'
   },
   understood: {
-    borderRadius: 4,
-    height: "10%",
+    borderRadius: 11,
+    height: '10%',
     width: '60%',
-    backgroundColor: '#57BDC1',
+    backgroundColor: '#00cece',
     justifyContent: 'center',
     left: '20%',
     top: '5%',
-    shadowColor: 'grey',
-    shadowOffset: {width: 2, height: 2},
-    shadowOpacity: 0.2,
-    shadowRadius: 4,
-    elevation: 2,
   },
 });

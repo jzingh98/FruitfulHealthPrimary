@@ -138,7 +138,7 @@ export default class RankConcerns extends React.Component {
 
         <TouchableOpacity style={styles.next}
             onPress={async () => {
-                this.props.navigation.navigate('FindDoctor');
+                this.props.navigation.navigate('Earned10Coins');
             }}
           >
         <CustomText //CANNOT put this in a stylesheet
@@ -172,8 +172,8 @@ const styles = StyleSheet.create({
 },
 next: {
   borderRadius: 11,
-  height: '5%',
-  width: '35%',
+  width: 270,
+  height: 51,
   backgroundColor: '#57BDC1',
   justifyContent: 'center',
   marginTop: 50
