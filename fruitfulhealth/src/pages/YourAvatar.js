@@ -15,7 +15,7 @@ export default class YourAvatar extends React.Component {
             <View>
              <CustomText
                    style={{
-                     fontFamily: 'Avenir-Light',
+                     fontFamily: 'Avenir',
                      fontSize: 25,
                      color: 'white',
                      textAlign: 'center',
@@ -35,7 +35,7 @@ export default class YourAvatar extends React.Component {
                      shadowColor: 'white',
                      shadowOffset: {width: 0, height: 0},
                      shadowOpacity: 1,
-                     shadowRadius: 2,
+                     shadowRadius: 1,
                    }}
                 source={require('../../images/yourAvatar.png')}/>
 
@@ -43,7 +43,7 @@ export default class YourAvatar extends React.Component {
                    style={{
                      padding: 10,
                      paddingTop: 15,
-                     fontFamily: 'Avenir-Light',
+                     fontFamily: 'Avenir',
                      fontSize: 20,
                      fontWeight: '400',
                      color: 'white',

@@ -43,7 +43,7 @@ const RootStack = createStackNavigator({
       screen: Earned10Coins,
   }
 }, {
-  initialRouteName: 'Earned10Coins',
+  initialRouteName: 'Login',
   navigationOptions: {
     headerStyle: {
       backgroundColor: 'white',

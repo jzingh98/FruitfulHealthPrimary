@@ -5908,16 +5908,6 @@ react-native-slider@^0.11.0:
   dependencies:
     prop-types "^15.5.6"
 
-react-native-sortable-list@^0.0.22:
-  version "0.0.22"
-  resolved "https://registry.yarnpkg.com/react-native-sortable-list/-/react-native-sortable-list-0.0.22.tgz#f23d2626ef0e625836205d46e48b97eb04169ec0"
-  dependencies:
-    prop-types "^15.5.10"
-
-react-native-sortable-listview@^0.2.8:
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/react-native-sortable-listview/-/react-native-sortable-listview-0.2.8.tgz#0d514fa73eb406a46baea96aa38a71e40257af90"
-
 react-native-svg-web@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/react-native-svg-web/-/react-native-svg-web-1.0.1.tgz#16e1784077b6e5b6c7ebd9c3829e6684211cba99"
